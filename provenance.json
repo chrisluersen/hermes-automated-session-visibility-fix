@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "artifact": "hermes-automated-session-visibility-fix",
+  "upstream": {
+    "repository": "https://github.com/NousResearch/hermes-agent",
+    "patch_baseline_commit": "3a42f99b200297ff10519b0aecf758084180021d",
+    "source_commit": "379a2e92899fee80102e73b336db5879af682ec0",
+    "license": "MIT"
+  },
+  "patch": {
+    "path": "patches/hermes-automated-session-visibility-fix.patch",
+    "sha256": "a033e6d46b69cb0e92354fd18d4035820533bb0d827e8593627a0a176b92c41f",
+    "bytes": 29391,
+    "changed_files": [
+      "hermes_cli/session_listing.py",
+      "hermes_cli/sessions_cmd.py",
+      "hermes_cli/web_routers/profiles.py",
+      "hermes_cli/web_routers/sessions.py",
+      "hermes_state.py",
+      "tests/hermes_cli/test_dashboard_admin_endpoints.py",
+      "tests/hermes_cli/test_profiles_sidebar_scope.py",
+      "tests/hermes_cli/test_session_listing.py",
+      "tests/hermes_cli/test_sessions_pin.py",
+      "tests/hermes_cli/test_web_server_session_search.py"
+    ]
+  },
+  "verification": {
+    "passed": 143,
+    "failed": 0,
+    "warnings": 1,
+    "compile": "passed",
+    "diff_check": "passed",
+    "security_scan": "no matches"
+  },
+  "publication": {
+    "visibility": "private",
+    "destination": "github.com/chrisluersen",
+    "upstream_submission": false,
+    "organization_specific_content": false
+  }
+}
